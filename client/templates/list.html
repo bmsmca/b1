@@ -1,0 +1,37 @@
+<div  ng-init="getinventory()">
+	<p >Inventory List</p>
+	<div >
+		<table border = 1 >
+			<thead>
+			<tr>
+			  <th>Item Code</th>
+			  <th>Item Name</th>
+			  <th>Price</th>
+			  <th>Weight</th>
+			  <th>Quantity</th>
+			  <th>Delievered</th>
+			 <th>Item Not Delievered</th>
+			 <th>Total Sales</th>
+			  <th>Actions</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr ng-repeat="invent in inventory">
+			  <td>{{ invent.code }}</td>
+			  <td>{{ invent.name }}</td>
+			  <td>{{ invent.price }}</td>
+			  <td>{{ invent.weight }}</td>
+			  <td>{{ invent.quantity }}</td>
+			 <td>{{ invent.delievered }}</td>
+			 <td>{{ invent.quantity - invent.delievered }}</td>
+			 <td>{{ invent.delievered * invent.price }}</td>
+			  <td> 
+			    <a href="#/inventory/{{invent._id}}/show" style="text-decoration:none;padding:10px;color:black;"> View  </a>
+			    <a href="#/inventory/{{invent._id}}/edit" style="text-decoration:none;padding:10px;color:black;"> Update  </a>
+			  	<a ng-click="deleteinventory(invent._id)" style="text-decoration:none;padding:10px;"> Delete </a>
+			  </td>
+			</tr>
+			</tbody>
+		</table>		
+    <div>
+<div>

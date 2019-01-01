@@ -1,0 +1,38 @@
+<div  ng-init="showinventory()">
+<p>Edit inventory</p>
+	<div >
+		<form ng-submit="updateinventory()">
+    <div >
+      Item Code: 
+      <input type="text"  ng-model="inventory.code" value="inventory.code">
+    </div>
+
+    <div >
+      Item Name:
+      <input type="text"  value="inventory.name" ng-model="inventory.name">
+    </div>
+
+    <div >
+      Item weight:
+      <input type="text"  value="inventory.weight" ng-model="inventory.weight">
+    </div>
+
+    <div >
+      Item Price:
+      <input type="text"  ng-model="inventory.price" value="inventory.price">
+    </div>
+
+    <div >
+        Item Quantity Ordered:
+        <input type="text"  value="inventory.quantity" ng-model="inventory.quantity">
+    </div>
+
+    <div >
+        Item Delievered:
+        <input type="text"  value="inventory.delievered" ng-model="inventory.delievered">
+    </div>
+    <button type="submit"  >Update</button>
+    <a href="#/inventory" > Cancel</a>
+</form>		
+    <div>
+<div>

@@ -1,0 +1,18 @@
+<div  ng-init="showinventory()">
+	  <p> inventory Detail Information</p>
+	<div >
+		<form>
+		<div >
+		 <label>Item Code: {{ inventory.code }}</label></br>
+		 <label>Item Name: {{ inventory.name }}</label></br>
+		 <label>Item weight: {{ inventory.weight }}</label></br>
+		 <label>Item Price: {{ inventory.price }}</label></br>
+		 <label>Quantity Ordered: {{ inventory.quantity }}</label></br>
+		 <label>Quantity Delievered: {{ inventory.delievered }}</label></br>
+		 <label>Quantity Not-Delievered: {{ inventory.quantity - inventory.delievered }}</label></br>
+		 <label>Quantity TotalSales: {{ inventory.delievered * inventory.price  }}</label></br>
+		<a href="#/inventory" > Cancel</a>
+		</div>
+	</form>		
+    <div>
+<div>

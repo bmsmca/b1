@@ -1,0 +1,37 @@
+	<div >
+		<form ng-submit="addinventory()">
+        <div >
+		<form ng-submit="updateinventory()">
+    <div >
+      Item Code: 
+      <input type="text"   ng-model="inventory.code" >
+    </div>
+
+    <div >
+      Item Name:
+      <input type="text"   ng-model="inventory.name">
+    </div>
+
+    <div >
+      Item weight:
+      <input type="text"    ng-model="inventory.weight">
+    </div>
+
+    <div >
+      Item Price:
+      <input type="text"  ng-model="inventory.price" >
+    </div>
+
+    <div >
+        Item Quantity Ordered:
+        <input type="text"  id="semester"   ng-model="inventory.quantity">
+    </div>
+
+    <div >
+        Item Delievered:
+        <input type="text"  id="semester"   ng-model="inventory.delievered">
+    </div>
+      <button type="submit" style="color:#5bc0de;" >Save</button>
+      <a href="#/inventory" > Cancel</a>
+    </form>		
+  </div>
